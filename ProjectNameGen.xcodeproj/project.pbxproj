@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		653E900F1B049A160054FC95 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653E900E1B049A160054FC95 /* main.cpp */; };
+		653E90171B049A3B0054FC95 /* LibraryReader.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653E90151B049A3B0054FC95 /* LibraryReader.cpp */; };
+		653E901B1B04AB750054FC95 /* WordProvider.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653E90191B04AB750054FC95 /* WordProvider.cpp */; };
+		653E901E1B04E06B0054FC95 /* NameGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 653E901C1B04E06B0054FC95 /* NameGenerator.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -25,6 +28,14 @@
 /* Begin PBXFileReference section */
 		653E900B1B049A160054FC95 /* ProjectNameGen */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = ProjectNameGen; sourceTree = BUILT_PRODUCTS_DIR; };
 		653E900E1B049A160054FC95 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		653E90151B049A3B0054FC95 /* LibraryReader.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LibraryReader.cpp; sourceTree = "<group>"; };
+		653E90161B049A3B0054FC95 /* LibraryReader.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LibraryReader.h; sourceTree = "<group>"; };
+		653E90181B049A6B0054FC95 /* nouns.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = nouns.txt; sourceTree = "<group>"; };
+		653E90191B04AB750054FC95 /* WordProvider.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WordProvider.cpp; sourceTree = "<group>"; };
+		653E901A1B04AB750054FC95 /* WordProvider.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WordProvider.h; sourceTree = "<group>"; };
+		653E901C1B04E06B0054FC95 /* NameGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = NameGenerator.cpp; sourceTree = "<group>"; };
+		653E901D1B04E06B0054FC95 /* NameGenerator.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NameGenerator.h; sourceTree = "<group>"; };
+		653E901F1B04F0FD0054FC95 /* WordList.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WordList.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +69,14 @@
 			isa = PBXGroup;
 			children = (
 				653E900E1B049A160054FC95 /* main.cpp */,
+				653E901C1B04E06B0054FC95 /* NameGenerator.cpp */,
+				653E901D1B04E06B0054FC95 /* NameGenerator.h */,
+				653E90191B04AB750054FC95 /* WordProvider.cpp */,
+				653E901F1B04F0FD0054FC95 /* WordList.h */,
+				653E901A1B04AB750054FC95 /* WordProvider.h */,
+				653E90151B049A3B0054FC95 /* LibraryReader.cpp */,
+				653E90161B049A3B0054FC95 /* LibraryReader.h */,
+				653E90181B049A6B0054FC95 /* nouns.txt */,
 			);
 			path = ProjectNameGen;
 			sourceTree = "<group>";
@@ -118,6 +137,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				653E90171B049A3B0054FC95 /* LibraryReader.cpp in Sources */,
+				653E901B1B04AB750054FC95 /* WordProvider.cpp in Sources */,
+				653E901E1B04E06B0054FC95 /* NameGenerator.cpp in Sources */,
 				653E900F1B049A160054FC95 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
