@@ -18,15 +18,19 @@ class WordProvider {
 	LibraryReader *reader = nullptr;
 	
 public:
-	WordProvider() {
-	}
-	
-	WordProvider(const char *libraryFilePath) {
-		reader = new LibraryReader(libraryFilePath);
-	}
+//	WordProvider() {
+//	}
+//	
+//	WordProvider(const char *libraryFilePath) {
+//		reader = new LibraryReader(libraryFilePath);
+//	}
 	
 	~WordProvider() {
 		delete reader;
+	}
+	
+	void openLibrary(const char *libraryFilePath) {
+		reader = new LibraryReader(libraryFilePath);
 	}
 	
 	const std::vector<std::string> &getWords() {

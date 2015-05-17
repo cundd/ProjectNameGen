@@ -49,16 +49,11 @@ int main(int argc, const char * argv[]) {
 //		printf ("\n");
 //	}
 	
-	
-	std::vector<string> words;
-	
+	WordProvider wordProvider;
 	if (libraryFilePath) {
-		WordProvider wordProvider(libraryFilePath);
-		words = wordProvider.getWords();
-	} else {
-		WordProvider wordProvider;
-		words = wordProvider.getWords();
+		wordProvider.openLibrary(libraryFilePath);
 	}
+	std::vector<string> words = wordProvider.getWords();
 	
 	if (dumpLibrary) {
 		for (auto word : words) {
